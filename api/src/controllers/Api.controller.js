@@ -1,10 +1,12 @@
 const axios = require("axios");
 
-const getAllProducts = async () => {
+
+
+
+const getAllProducts = async (products) => {
   try {
-    const getApiProducts = axios.get("https://fakestoreapi.com/products");
     
-    const apiProducts = await getApiProducts.map((elem) => {
+    const apiProducts = await products.map((elem) => {
       return {
         id: elem.id,
         title: elem.title,

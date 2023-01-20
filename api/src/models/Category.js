@@ -12,7 +12,7 @@ module.exports = (sequelize) => {
         allowNull: false,
         primaryKey: true,
       },
-      category: {
+      name: {
         type: DataTypes.STRING,
       },
     },
